@@ -1,5 +1,9 @@
 module NMRSimulations
 
-greet() = print("Hello World!")
+using DifferentialEquations
+using FFTW
+using PyPlot
+
+include("spin_probability.jl")
 
 end # module

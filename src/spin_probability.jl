@@ -1,7 +1,3 @@
-using DifferentialEquations
-using PyPlot
-
-#%%
 # Define the coupled ODEs
 function bloch!(du, u, p, t)
     du[1] = 0.5 * (p[2]*u[2] + p[3] * cos(p[1]*t) * u[4])

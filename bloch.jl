@@ -121,18 +121,3 @@ plot!(u3, w3, t3, label="T1 = ∞, T2 = ∞", lw=1.5, grid=false)
 plot(t4, u4, v4, title="Free precession for T1 = 1s, T2 = 0.3s", lw=1.5, grid=false)
 xlabel!("u(t)")
 ylabel!("w(t)")
-
-#%%
-# Δ = range(0.0, 20.0, step=0.01)
-
-# function lin_solve(delta, A, b, T2)
-#     A = [1 -T2*delta; -T2*delta -1]
-#     b = [0; 0]
-#     return A\b[1], A\b[2]
-# end
-
-# for i=1:48
-#     u = []; v = []
-#     push!(u, lin_solve(Δ[i], [1 -T2*Δ[i]; -T2*Δ[i] -1], [0; 0], T2)[1])
-#     push!(v, lin_solve(Δ[i], [1 -T2*Δ[i]; -T2*Δ[i] -1], [0; 0], T2)[2])
-# end

@@ -129,7 +129,7 @@ omegaPrime2, Y2 = eval_power_spectrum(u0, tspan, p)
 
 
 #%%
-plot!(omegaPrime2, Y2)
+plot(omegaPrime2, Y2)
 
 #%%
 omegaPrime3, Y3 = eval_power_spectrum(u0, tspan, [0.6, 1.0, 1.0])
@@ -137,6 +137,7 @@ omegaPrime4, Y4 = eval_power_spectrum(u0, tspan, [0.7, 1.0, 1.0])
 omegaPrime5, Y5 = eval_power_spectrum(u0, tspan, [0.8, 1.0, 1.0])
 omegaPrime6, Y6 = eval_power_spectrum(u0, tspan, [0.9, 1.0, 1.0])
 
-plot!(omegaPrime3, Y3)
+plot(omegaPrime3, Y3)
 plot(omegaPrime4, Y4)
-plot(omegaPrime5, Y5, xlims=(0.0, 0.05))
+plot(omegaPrime5, Y5)
+plot(omegaPrime6, Y6)
